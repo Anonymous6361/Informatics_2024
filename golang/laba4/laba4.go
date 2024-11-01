@@ -5,14 +5,14 @@ import (
 	"math"
 )
 
-func Colcul(a, b, x float64) float64 {
+func CalculateFunction(a, b, x float64) float64 {
 	y := (math.Log(math.Pow(b, 2)-math.Pow(x, 2)) / math.Log(a)) / (math.Pow(x*x-a*a, 1/3))
 	return y
 }
 func TaskA(a, b, xMin, xMax, xDelta float64) []float64 {
 	var result []float64
 	for i := xMin; i < xMax; i += xDelta {
-		result = append(result, Colcul(a, b, i))
+		result = append(result, CalculateFunction(a, b, i))
 	}
 	return result
 }
@@ -20,7 +20,7 @@ func TaskA(a, b, xMin, xMax, xDelta float64) []float64 {
 func TaskB(a, b float64, x []float64) []float64 {
 	var result []float64
 	for _, i := range x {
-		result = append(result, Colcul(a, b, i))
+		result = append(result, CalculateFunction(a, b, i))
 	}
 	return result
 }
