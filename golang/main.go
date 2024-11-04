@@ -5,6 +5,5 @@ import (
 )
 
 func main() {
-
 	laba6.CompleteLaba6()
 }
