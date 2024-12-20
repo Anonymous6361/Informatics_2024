@@ -19,8 +19,8 @@ func (v *vegetable) SetPrice(price float64) {
 }
 
 func (v *vegetable) ApplyDiscount(discount float64) {
-	v.Price -= l.Price * discount / 100
+	v.Price -= v.Price * discount / 100
 }
 func (v *vegetable) GetSort(newSort string) string {
-	Sort = newSort
+	v.Sort = newSort
 }
