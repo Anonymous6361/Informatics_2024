@@ -1,4 +1,4 @@
-package laba8
+package lab8
 
 import (
 	"fmt"

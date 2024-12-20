@@ -1,4 +1,4 @@
-package laba8
+package lab8
 
 import (
 	"io"
@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"isuct.ru/informatics2022/lab4"
+	"isuct.ru/informatics2022/laba4"
 )
 
 const PathTask1 = "lab8/input.txt"
@@ -45,3 +45,4 @@ func task1() error {
 	laba4.TaskB(result[3:7])
 
 	return nil
+}
