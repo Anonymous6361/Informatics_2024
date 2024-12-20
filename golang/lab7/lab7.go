@@ -18,7 +18,7 @@ func CalculatePrice(products []Product) float64 {
 }
 
 func CompleteLab7() {
-	vegetable := &vegetable{"Cucumber", 13000}
+	vegetable := &vegetable{"Cucumber", 13000, "Хрустящие"}
 	car := &Car{"Lada", 10000000, "Красный"}
 	products := []Product{vegetable, car}
 	fmt.Println("Общая стоимость", CalculatePrice(products))
