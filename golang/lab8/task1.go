@@ -44,7 +44,7 @@ func task1() error {
 	xMax := result[3]
 	xDelta := result[4]
 	laba4.TaskA(a, b, xMin, xMax, xDelta)
-	laba4.TaskB(result[5:9])
+	laba4.TaskB(a,b, result[5:9])
 
 	return nil
 }
