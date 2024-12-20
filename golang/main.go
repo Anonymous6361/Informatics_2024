@@ -4,6 +4,7 @@ import (
 	"isuct.ru/informatics2022/laba6"
 	"isuct.ru/informatics2022/laba4"
 	"isuct.ru/informatics2022/lab7"
+	"isuct.ru/informatics2022/lab8"
 	"fmt"
 )
 

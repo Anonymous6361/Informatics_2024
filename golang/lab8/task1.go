@@ -38,11 +38,13 @@ func task1() error {
 		result = append(result, number)
 	}
 
-	xMin:= result[0]
-	xMax := result[1]
-	xDelta := result[2]
-	laba4.TaskA(xMin, xMax, xDelta)
-	laba4.TaskB(result[3:7])
+	a:= result[0]
+	b:= result[1]
+	xMin:= result[2]
+	xMax := result[3]
+	xDelta := result[4]
+	laba4.TaskA(a, b, xMin, xMax, xDelta)
+	laba4.TaskB(result[5:9])
 
 	return nil
 }
