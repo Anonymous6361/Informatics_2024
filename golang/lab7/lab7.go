@@ -18,13 +18,13 @@ func CalculatePrice(products []Product) float64 {
 }
 
 func CompleteLab7() {
-	vegetable := &vegetable{"Cucumber", 13000,}
+	vegetable := &vegetable{"Cucumber", 13000}
 	car := &Car{"Lada", 10000000, "Красный"}
 	products := []Product{vegetable, car}
 	fmt.Println("Общая стоимость", CalculatePrice(products))
 	vegetable.ApplyDiscount(50)
 	car.ApplyDiscount(2)
-	fmt.Println("Общая стоимость после скидки", Calculate(products))
+	fmt.Println("Общая стоимость после скидки", CalculatePrice(products))
 	fmt.Println("Цвет машины:", car.Color)
 	car.ChangeColor("Малиновая")
 	fmt.Println("Да, у нас есть для вас ", car.Color,"Лада")
