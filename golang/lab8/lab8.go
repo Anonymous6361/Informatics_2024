@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func RunLab8Task() {
+func CompleteLab8() {
 	var err error
 
 	err = CreateFile()
