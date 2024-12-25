@@ -10,8 +10,8 @@ import (
 
 const Path = "lab8/text.txt"
 
-func CreateFile() error {
-	file, err := os.Create(Path)
+func CreateFile(path string) error {
+	file, err := os.Create(path)
 	if err != nil {
 		return err
 	}
@@ -20,8 +20,8 @@ func CreateFile() error {
 	return nil
 }
 
-func WriteFile() error {
-	file, err := os.OpenFile(Path, os.O_WRONLY, 0666)
+func WriteFile(path string) error {
+	file, err := os.OpenFile(path, os.O_WRONLY, 0666)
 	if err != nil {
 		return err
 	}
@@ -39,8 +39,8 @@ func WriteFile() error {
 	return nil
 }
 
-func ReadFile() (string, error) {
-	file, err := os.Open(Path)
+func ReadFile(path string) (string, error) {
+	file, err := os.Open(path)
 	if err != nil {
 		return "", err
 	}
@@ -59,7 +59,7 @@ func ReadFile() (string, error) {
 }
 
 func SearchText(searchText string) (bool, error) {
-	text, err := ReadFile()
+	text, err := ReadFile("lab8/text.txt")
 	if err != nil {
 		return false, err
 	}

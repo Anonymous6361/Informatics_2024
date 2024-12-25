@@ -7,17 +7,17 @@ import (
 func CompleteLab8() {
 	var err error
 
-	err = CreateFile()
+	err = CreateFile("lab8/text.txt")
 	if err != nil {
 		panic(err)
 	}
 
-	err = WriteFile()
+	err = WriteFile("lab8/text.txt")
 	if err != nil {
 		panic(err)
 	}
 
-	text, err := ReadFile()
+	text, err := ReadFile("lab8/text.txt")
 	if err != nil {
 		panic(err)
 	}

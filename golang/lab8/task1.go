@@ -29,7 +29,7 @@ func task1() error {
 	}
 
 	var result []float64
-	Parameters := strings.Split(text, "\r\n")
+	Parameters := strings.Split(text, "\n")
 	for _, P := range Parameters {
 		number, err := strconv.ParseFloat(P, 64)
 		if err != nil {
@@ -38,13 +38,13 @@ func task1() error {
 		result = append(result, number)
 	}
 
-	a:= result[0]
-	b:= result[1]
-	xMin:= result[2]
+	a := result[0]
+	b := result[1]
+	xMin := result[2]
 	xMax := result[3]
 	xDelta := result[4]
 	laba4.TaskA(a, b, xMin, xMax, xDelta)
-	laba4.TaskB(a,b, result[5:9])
+	laba4.TaskB(a, b, result[5:9])
 
 	return nil
 }
